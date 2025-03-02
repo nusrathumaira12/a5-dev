@@ -12,7 +12,17 @@ const btns = document.getElementsByClassName("btn")
 //   console.log("hello")
 for(const btn of btns){
    btn.addEventListener("click", function(){
-    alert()
+    alert("Board updated Successfully")
+ const notAdd = document.getElementById("low")
+//  console.log(notAdd)
+//  console.log(typeof notAdd.innerText)
+const convertedNotAdd = parseFloat(notAdd.innerText)
+// console.log(typeof convertedNotAdd)
+let result = convertedNotAdd - 1;
+
+console.log(result)
+document.getElementById("low").innerText = result;
+
    })
 }
     
