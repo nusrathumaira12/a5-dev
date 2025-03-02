@@ -12,11 +12,7 @@ document.getElementById("goToPage").addEventListener("click",
       window.location.href = "new.html";
    }
 )
-document.getElementById("backPage").addEventListener("click",
-   function(){
-      window.history.back();
-   }
-)
+
 
 
 
