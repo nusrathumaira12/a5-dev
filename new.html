@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-slate-200">
     <section class="w-4/5 min-h-screen mx-auto pt-10 ">
         <header>
@@ -15,13 +17,56 @@
                     <img class="w-10 object-contain" src="assets/logo.png" alt="">
                     <h2 class="text-3xl">Dev<span class="text-3xl font-bold">Board</span></h2>
                 </div>
-                
+
                 <button id="backToPage" class="bg-blue-600 p-3 m-2 rounded-lg">Back to desk</button>
             </nav>
         </header>
-</section>
-<script src="script/page.js"></script>
-<script src="script/events.js"></script>
-<script src="script/activities.js"></script>
+
+
+        <main>
+            <section>
+                <h3 class="font-bold my-5 text-center text-xl">Blogs</h3>
+
+                <div class="bg-white p-4">
+                    <p class="font-bold text-sm">Question-1: what the different ways to select an element in the DOM?
+                    </p>
+                    <p class="text-gray-400 font-bold">Answer:--   1. getElementById, 2. getElementsByClassName, 3.querySelector, 4.querySelectorAll, 5.getElementsByTagName </p>
+                </div>
+                <br>
+
+                <div class="bg-white p-4">
+                    <p class="font-bold text-sm">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                    </p>
+                    <p class="text-gray-400 font-bold">Answer:--   1.innerHTML - Gets the HTML content of an element,takes everything inside the element.
+                        2.innerText - gets the text content of an element, which is visible to the user.
+                        3.textContent - gets the text  content of an element.it will return all text inside the element ,even if its hidden.
+                    </p>
+                </div>
+                <div class="bg-white p-4">
+                    <p class="font-bold text-sm">Question-3: What is event delegation in the DOM?
+                    </p>
+                    <p class="text-gray-400 font-bold">Answer:-- It is where a single parent element is used to handle events  for many child elementa instead of adding event listeners.
+                    </p>
+                </div>
+                <div class="bg-white p-4">
+                    <p class="font-bold text-sm">Question-4: What is event bubbling in the DOM?
+                    </p>
+                    <p class="text-gray-400 font-bold">Answer:--  The first executed handler is on the target , then its parents and its parents,etc.
+                    </p>
+                </div>
+                <div class="bg-white p-4">
+                    <p class="font-bold text-sm">Question-5: How do you create, add, and remove elements using JavaScript?
+                    </p>
+                    <p class="text-gray-400 font-bold">Answer:--  1.Create element - document.createElement("tagName"), 2. add Element- parent.appendChild() 3.parent.removeChild(child)
+                    </p>
+                </div>
+               
+            </section>
+        </main>
+    </section>
+    <script src="script/page.js"></script>
+    <script src="script/events.js"></script>
+    <script src="script/activities.js"></script>
 </body>
+
 </html>
