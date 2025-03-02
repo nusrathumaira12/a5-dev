@@ -31,4 +31,3 @@ document.getElementById("clear").addEventListener("click", function(){
     document.getElementById("logContainer").style.display = "none"
 })
 
-

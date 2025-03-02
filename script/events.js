@@ -7,6 +7,19 @@ document.getElementById('theme').addEventListener("click", function (event) {
    index = (index + 1) % colors.length;
 });
 
+document.getElementById("goToPage").addEventListener("click",
+   function(){
+      window.location.href = "new.html";
+   }
+)
+document.getElementById("backPage").addEventListener("click",
+   function(){
+      window.history.back();
+   }
+)
+
+
+
 // document.querySelectorAll(".btn")
 const btns = document.querySelectorAll(".btn")
 // const logContainer = document.getElementById("logContainer")
